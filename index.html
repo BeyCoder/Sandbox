@@ -93,7 +93,7 @@
             <!-- /.navbar-collapse -->
             <div class="navbar-other w-100 d-flex ms-auto">
                 <ul class="navbar-nav flex-row align-items-center ms-auto">
-                    <li class="dropdown text-uppercase">
+                    <li class="dropdown text-uppercase nav-item">
                         <a class="nav-link dropdown-toggle" href="#" aria-expanded="true">En</a>
                         <ul class="dropdown-menu language-select slideIn">
                             <li class="nav-item"><a class="dropdown-item" href="#">En</a></li>
@@ -105,7 +105,7 @@
                         <a href="#" class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-info"><i class="uil uil-info-circle" style="font-size: 23px"></i></a>
                     </li>
                     <li class="nav-item d-lg-none">
-                        <button class="hamburger offcanvas-nav-btn"><span></span></button>
+                        <a class="hamburger offcanvas-nav-btn"><i class="uil uil-bars" style="font-size: 25px; color: #343f52"></i></a>
                     </li>
                 </ul>
                 <!-- /.navbar-nav -->
@@ -116,8 +116,8 @@
     </nav>
     <div class="offcanvas offcanvas-end text-inverse" id="offcanvas-info" data-bs-scroll="true" style="visibility: hidden;" aria-hidden="true">
         <div class="offcanvas-header">
-            <h3 class="text-white fs-30 mb-0">Sandbox</h3>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h3 class="text-white mb-0">Sandbox</h3>
+            <a href="#" class="close" data-bs-dismiss="offcanvas" aria-label="Close"><i class="uil uil-times"></i></a>
         </div>
         <div class="offcanvas-body pb-6">
             <div class="widget mb-8">
@@ -127,22 +127,23 @@
             <div class="widget mb-8">
                 <h4 class="widget-title text-white mb-3">Contact Info</h4>
                 <address> Moonshine St. 14/05 <br> Light City, London </address>
-                <a href="mailto:first.last@email.com">info@email.com</a><br> 00 (123) 456 78 90
+                <a class="offcanvas-button" href="mailto:first.last@email.com">info@email.com</a>
+                <p>00 (123) 456 78 90</p>
             </div>
             <!-- /.widget -->
             <div class="widget mb-8">
                 <h4 class="widget-title text-white mb-3">Learn More</h4>
                 <ul class="list-unstyled">
-                    <li><a href="#">Our Story</a></li>
-                    <li><a href="#">Terms of Use</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a class="offcanvas-button" href="#">Our Story</a></li>
+                    <li><a class="offcanvas-button" href="#">Terms of Use</a></li>
+                    <li><a class="offcanvas-button" href="#">Privacy Policy</a></li>
+                    <li><a class="offcanvas-button" href="#">Contact Us</a></li>
                 </ul>
             </div>
             <!-- /.widget -->
             <div class="widget">
                 <h4 class="widget-title text-white mb-3">Follow Us</h4>
-                <nav class="nav social social-white">
+                <nav class="nav social">
                     <a href="#"><i class="uil uil-twitter"></i></a>
                     <a href="#"><i class="uil uil-facebook-f"></i></a>
                     <a href="#"><i class="uil uil-dribbble"></i></a>
