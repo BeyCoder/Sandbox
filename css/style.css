@@ -94,7 +94,7 @@ p{
     animation-fill-mode: both;
 }
 
-.dropdown-header{
+.dropdown-header, .offcanvas-column-header{
     font: 14px THICCCBOIBold, sans-serif;
     color: #fab758;
     text-transform: uppercase;
@@ -176,6 +176,14 @@ button.hamburger {
 
 .offcanvas-end{
     width: 20rem;
+}
+
+.offcanvas-start{
+    width: 19rem;
+}
+
+.offcanvas-footer{
+    padding: 1.5rem 1.5rem;
 }
 
 .close {
@@ -272,5 +280,36 @@ button.hamburger {
 
 .offcanvas-header h3{
     font: 2.15rem THICCCBOIBold, sans-serif;
+}
+
+.accordion-button{
+    border: none;
+    background: none;
+    color: #fff;
+    font: 1.1rem THICCCBOIBold, sans-serif;
+    padding: 1.1rem 0;
+}
+
+.accordion-item{
+    background: none;
+    border: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background: none;
+    box-shadow: none;
+    border: none;
+}
+
+.accordion-button::after {
+    background-image: none;
+    font-family: Custom, serif;
+    content: "\e900" !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+    transform: rotate(-180deg);
 }
 
