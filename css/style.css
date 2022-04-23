@@ -72,7 +72,7 @@ h1{
 
 p{
     color: #60697b;
-    font-family: THICCCBOI, sans-serif !important;
+    font: 17px THICCCBOI, sans-serif !important;
 }
 
 .btn-yellow{
@@ -704,4 +704,12 @@ a.hover-3.more:hover:before {
     top: 0;
     width: 100%;
     z-index: 9999 !important;
+}
+
+.padding-large{
+    padding-top: 10rem;
+}
+
+.bg-gradient-reverse-primary {
+    background: linear-gradient(0deg,#fff8ef,rgba(255,255,255,0) 100%)!important;
 }
