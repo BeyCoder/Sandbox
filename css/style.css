@@ -40,3 +40,78 @@ p{
     color: #fff;
     box-shadow: -2px 2px 10px 0px rgba(0,0,0,0.2);
 }
+
+.navbar-light .navbar-nav .nav-link{
+    font: 17px THICCCBOIBold, sans-serif;
+    color: #343f52;
+    transition: ease-in-out 0.2s;
+}
+.dropdown-item{
+    font: 15px THICCCBOIBold, sans-serif;
+    color: #343f52;
+    transition: ease-in-out 0.2s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .dropdown-item:hover{
+    background: none;
+    color: #fab758;
+}
+
+.dropdown-toggle::after{
+    color: #fab758;
+}
+
+.dropdown-menu{
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    min-width: 10rem;
+    padding: 1rem 0;
+    margin: 0;
+    font-size: .75rem;
+    color: #343f52;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid transparent;
+    border-radius: 0.4rem;
+    box-shadow: 0 0 1.25rem rgb(30 34 40 / 6%);
+}
+.dropdown-menu.language-select{
+    min-width: 3rem;
+    padding: 1rem;
+}
+.dropend .dropdown-toggle::after {
+    position: absolute;
+    margin-right: 0;
+    right: 1rem;
+    top: 0.5rem;
+    font-size: .9rem;
+    color: #343f52;
+    transition: ease-in-out 0.2s;
+}
+.dropend:hover .dropdown-toggle::after{
+    color: #fab758;
+}
+.navbar-nav .dropdown:not(.dropdown-submenu):hover>.dropdown-menu {
+    top: 100%;
+    pointer-events: all;
+    visibility: visible;
+    opacity: 1;
+    transition: all .25s ease-in-out;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.dropdown-submenu {
+    position:relative;
+}
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top:-6px;
+}
