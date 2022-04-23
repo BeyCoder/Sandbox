@@ -50,6 +50,7 @@ p{
     font: 15px THICCCBOIBold, sans-serif;
     color: #343f52;
     transition: ease-in-out 0.2s;
+    margin-bottom: 1rem;
 }
 
 .navbar-light .navbar-nav .nav-link:hover, .dropdown-item:hover{
@@ -61,12 +62,51 @@ p{
     color: #fab758;
 }
 
+.double-column{
+    display: flex;
+    flex-direction: row;
+}
+
+.double-column-item{
+    padding: 0 10px 10px;
+}
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+}
+
+.slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+}
+
+.dropdown-header{
+    font: 14px THICCCBOIBold, sans-serif;
+    color: #fab758;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.border-right{
+    border-right: 1px solid rgba(226, 227, 229, 0.75);
+}
+
 .dropdown-menu{
     position: absolute;
     z-index: 1000;
     display: none;
     min-width: 10rem;
-    padding: 1rem 0;
+    padding: 1rem 0 0;
     margin: 0;
     font-size: .75rem;
     color: #343f52;
@@ -94,7 +134,7 @@ p{
 .dropend:hover .dropdown-toggle::after{
     color: #fab758;
 }
-.navbar-nav .dropdown:not(.dropdown-submenu):hover>.dropdown-menu {
+.navbar-nav.dropdown:not(.dropdown-submenu-button):hover>.dropdown-menu {
     top: 100%;
     pointer-events: all;
     visibility: visible;
@@ -107,11 +147,11 @@ p{
     margin-top: 0;
 }
 
-.dropdown-submenu {
-    position:relative;
+.dropdown-submenu-button {
+    position: relative;
 }
-.dropdown-submenu > .dropdown-menu {
+
+.dropdown-submenu-button > .dropdown-menu {
     top: 0;
-    left: 100%;
-    margin-top:-6px;
+    left: 105%;
 }
