@@ -777,7 +777,7 @@ a.hover-3.more:hover:before {
 
 .form-floating>.form-control,.form-floating>.form-select {
     height: calc(2.5rem + 2px);
-    line-height: 1.25
+    line-height: 1.25;
 }
 
 .form-floating>label {
@@ -789,12 +789,12 @@ a.hover-3.more:hover:before {
     pointer-events: none;
     border: 1px solid transparent;
     transform-origin: 0 0;
-    transition: opacity .1s ease-in-out,transform .1s ease-in-out
+    transition: opacity .1s ease-in-out,transform .1s ease-in-out;
 }
 
 @media (prefers-reduced-motion:reduce) {
     .form-floating>label {
-        transition: none
+        transition: none;
     }
 }
 
@@ -3216,4 +3216,16 @@ a:hover{
 
 .w-15{
     width: 5rem;
+}
+
+form.dark-fields .form-control {
+    background: rgba(255,255,255,.03);
+    border-color: rgba(255,255,255,.1);
+    color: #cacaca;
+}
+
+form.light-fields .form-control {
+    background: rgba(255, 255, 255, .1);
+    border-color: rgb(234, 234, 234);
+    color: #cacaca;
 }

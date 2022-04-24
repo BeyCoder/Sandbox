@@ -343,11 +343,14 @@
                 <p class="mb-7" style="line-height: 1.5rem !important">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
                 <div class="row">
                     <div class="col-lg-9">
-                        <form action="#">
-                            <div class="form-floating input-group">
-                                <input type="url" class="form-control" placeholder="Enter Website URL" id="seo-check">
-                                <label for="seo-check">Enter Website URL</label>
-                                <button class="btn btn-primary" type="button">Check</button>
+                        <form class="validate light-fields">
+                            <div>
+                                <div class="input-group form-floating">
+                                    <input type="email" value="" name="EMAIL" class="required email form-control" placeholder="Email Address" id="website">
+                                    <label for="website">Enter Website URL</label>
+                                    <button class="btn btn-primary" type="button">Check</button>
+                                </div>
+                                <div class="clear"></div>
                             </div>
                         </form>
                     </div>
@@ -803,6 +806,7 @@
             <!--/.row -->
         </div>
         <!--/.row -->
+        <!--TODO: fix positions-->
         <div class="px-lg-5" style="margin-top: 10rem;">
             <div class="row gx-0 gx-md-8 gx-xl-12 gy-8 align-items-center">
                 <div class="col-4 col-md-2">
@@ -836,7 +840,7 @@
     </div>
     <!-- /.container -->
 </section>
-
+<!--TODO: angled footer, positions -->
 <footer class="bg-navy text-inverse" style="margin-top: 10rem; padding-top: 5rem">
     <div class="container pt-15 pt-md-17 pb-13 pb-md-15">
         <div class="d-lg-flex flex-row align-items-lg-center">
@@ -891,18 +895,13 @@
                     <div class="newsletter-wrapper">
                         <!-- Begin Mailchimp Signup Form -->
                         <div id="mc_embed_signup2">
-                            <form action="https://elemisfreebies.us20.list-manage.com/subscribe/post?u=aa4947f70a475ce162057838d&amp;id=b49ef47a9a" method="post" id="mc-embedded-subscribe-form2" name="mc-embedded-subscribe-form" class="validate dark-fields" target="_blank" novalidate="">
+                            <form class="validate dark-fields">
                                 <div id="mc_embed_signup_scroll2">
                                     <div class="mc-field-group input-group form-floating">
                                         <input type="email" value="" name="EMAIL" class="required email form-control" placeholder="Email Address" id="mce-EMAIL2">
                                         <label for="mce-EMAIL2">Email Address</label>
                                         <input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe2" class="btn btn-primary ">
                                     </div>
-                                    <div id="mce-responses2" class="clear">
-                                        <div class="response" id="mce-error-response2" style="display:none"></div>
-                                        <div class="response" id="mce-success-response2" style="display:none"></div>
-                                    </div> <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ddc180777a163e0f9f66ee014_4b1bcfa0bc" tabindex="-1" value=""></div>
                                     <div class="clear"></div>
                                 </div>
                             </form>
