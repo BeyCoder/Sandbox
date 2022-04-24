@@ -79,5 +79,34 @@ document.addEventListener("DOMContentLoaded", function(){
             }
         });
     });
+    document.querySelectorAll('.pricing-switchers').forEach(function(element){
+        element.addEventListener('click', function (e) {
+            var leftElement = true;
+            var changed = false;
+            document.querySelectorAll('.pricing-switcher').forEach(function(nextEl){
+                if($(nextEl).hasClass("pricing-switcher-active")){
+                    if(!changed) leftElement = false;
+                    $(nextEl).removeClass("pricing-switcher-active")
+                }else
+                {
+                    $(nextEl).addClass("pricing-switcher-active")
+                }
+                changed = true;
 
+            })
+            document.querySelectorAll('.prices').forEach(function (prices){
+                prices.querySelectorAll('.price').forEach(function (priceElement){
+                    if($(priceElement).hasClass("price-show")){
+                        $(priceElement).removeClass("price-show")
+                        $(priceElement).addClass("price-hide")
+                    }else
+                    {
+                        $(priceElement).removeClass("price-hide")
+                        $(priceElement).addClass("price-show")
+                    }
+                })
+
+            })
+        })
+    })
 });
