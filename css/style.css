@@ -3229,3 +3229,53 @@ form.light-fields .form-control {
     border-color: rgb(234, 234, 234);
     color: #cacaca;
 }
+
+hr {
+    margin: 4.5rem 0;
+    color: rgba(164,174,198,.2);
+    background-color: currentColor;
+    border: 0;
+    opacity: 1;
+}
+@media (min-width: 1400px) {
+    .pe-xxl-25 {
+        padding-right: 22.5rem !important;
+    }
+}
+@media (min-width: 1200px) {
+    .pe-xl-22 {
+        padding-right: 15rem !important;
+    }
+}
+@media (min-width: 992px) {
+    .pe-lg-20 {
+        padding-right: 10rem !important;
+    }
+    .left h3{
+        width: 65%;
+    }
+}
+@media (min-width: 992px) {
+    .mb-lg-0 {
+        margin-bottom: 0 !important;
+    }
+}
+
+footer .left{
+    width: 100%;
+}
+
+.left h3{
+    font-size: 38px;
+}
+
+.px-5 {
+    padding-right: 1.25rem!important;
+    padding-left: 1.25rem!important;
+}
+
+figure img {
+    width: 100%;
+    max-width: 100%;
+    height: auto!important;
+}
