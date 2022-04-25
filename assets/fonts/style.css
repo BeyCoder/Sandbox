@@ -148,8 +148,8 @@ h6 {
     line-height: 1.6
 }
 .lead.fs-lg {
-    font-size: 1.1rem !important;
-    line-height: 1.55
+    font-size: 1.3rem !important;
+    line-height: 1.6
 }
 .display-1 {
     font-size: calc(1.375rem + 1.5vw);

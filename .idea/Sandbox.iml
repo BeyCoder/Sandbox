@@ -9,5 +9,6 @@
     <orderEntry type="library" name="popper.js" level="application" />
     <orderEntry type="library" name="line" level="application" />
     <orderEntry type="library" name="headhesive" level="application" />
+    <orderEntry type="library" name="swiper" level="application" />
   </component>
 </module>

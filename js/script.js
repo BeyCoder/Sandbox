@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", function(){
+    var timeout;
+
     document.querySelectorAll('.dropdown-submenu-button').forEach(function(element){
         element.addEventListener('mouseover', function (e) {
+            clearTimeout(timeout)
             element.querySelectorAll('.dropdown-submenu').forEach(function (nextEl){
                 e.preventDefault();
                 if(nextEl.style.display === 'none'){
@@ -9,13 +12,21 @@ document.addEventListener("DOMContentLoaded", function(){
             })
         });
 
-        element.addEventListener('mouseout', function (e) {
+
+        const func = (e) => {
             element.querySelectorAll('.dropdown-submenu').forEach(function (nextEl){
                 e.preventDefault();
                 if(nextEl.style.display === 'block'){
                     nextEl.style.display = 'none';
                 }
             })
+
+        }
+
+        element.addEventListener('mouseout', function (e) {
+            timeout = setTimeout(func(e), 500);
+
+
         });
     })
 
