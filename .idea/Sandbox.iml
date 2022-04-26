@@ -11,5 +11,6 @@
     <orderEntry type="library" name="headhesive" level="application" />
     <orderEntry type="library" name="swiper" level="application" />
     <orderEntry type="library" name="waypoints" level="application" />
+    <orderEntry type="library" name="glightbox" level="application" />
   </component>
 </module>

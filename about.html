@@ -63,7 +63,6 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#">Blog</a>
                         <ul class="dropdown-menu slideIn">
-                            <li class="nav-item "><a class="dropdown-item" href="./blog2.html">Blog with Sidebar</a></li>
                             <li class="dropdown dropdown-submenu-button dropend">
                                 <a class="dropdown-item dropdown-toggle" href="#">Blog Posts</a>
                                 <ul class="dropdown-menu dropdown-submenu slideIn">
@@ -95,6 +94,106 @@
         </div>
     </div>
 </nav>
+
+<div class="offcanvas offcanvas-start text-inverse" id="offcanvas-nav" data-bs-scroll="true" style="visibility: hidden;" aria-hidden="true">
+    <div class="offcanvas-header">
+        <h3 class="text-white mb-0">Sandbox</h3>
+        <a href="#" class="close" data-bs-dismiss="offcanvas" aria-label="Close"><i class="uil uil-times"></i></a>
+    </div>
+    <div class="offcanvas-body pb-6">
+        <div class="widget mb-8">
+            <div class="accordion" id="mobileNav">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Pages
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#mobileNav">
+                        <div class="accordion-body">
+                            <div class="accordion" id="aboutNav">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="aboutOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAboutOne" aria-expanded="false" aria-controls="collapseAboutOne">
+                                            About
+                                        </button>
+                                    </h2>
+                                    <div id="collapseAboutOne" class="accordion-collapse collapse" aria-labelledby="aboutNav" data-bs-parent="#aboutOne">
+                                        <div class="accordion-body">
+                                            <a class="offcanvas-button" style="color: #fff" href="./about.html" >About 1</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Projects
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#mobileNav">
+                        <div class="accordion-body">
+                            <div class="double-column-item">
+                                <h6 class="offcanvas-column-header">Project Pages</h6>
+                                <a class="offcanvas-button" href="./projects.html" style="color: #fff">Projects I</a>
+                            </div>
+                            <div class="double-column-item">
+                                <h6 class="offcanvas-column-header">Single Projects</h6>
+                                <a class="offcanvas-button" href="./single-project.html" style="color: #fff">Single Project I</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Blog
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#mobileNav">
+                        <div class="accordion-body">
+                            <div class="accordion" id="blogNav">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="blogOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBlogOne" aria-expanded="false" aria-controls="collapseBlogOne">
+                                            Blog Posts
+                                        </button>
+                                    </h2>
+                                    <div id="collapseBlogOne" class="accordion-collapse collapse" aria-labelledby="blogNav" data-bs-parent="#blogOne">
+                                        <div class="accordion-body">
+                                            <a class="offcanvas-button" style="color: #fff" href="./blog-post2.html">Post with Sidebar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /.widget -->
+    </div>
+
+    <div class="offcanvas-footer d-lg-none">
+        <div>
+            <a href="mailto:first.last@email.com" class="offcanvas-button">info@email.com</a>
+            <p> 00 (123) 456 78 90 </p>
+            <nav class="nav social social-white mt-4">
+                <a href="#"><i class="uil uil-twitter"></i></a>
+                <a href="#"><i class="uil uil-facebook-f"></i></a>
+                <a href="#"><i class="uil uil-dribbble"></i></a>
+                <a href="#"><i class="uil uil-instagram"></i></a>
+                <a href="#"><i class="uil uil-youtube"></i></a>
+            </nav>
+            <!-- /.social -->
+        </div>
+    </div>
+    <!-- /.offcanvas-body -->
+</div>
 <section class="wrapper bg-gray">
     <div class="container pt-10 pt-md-14 text-center">
         <div class="row">

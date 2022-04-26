@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sandbox - Modern & Multipurpose Bootstrap 5 Template</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/fonts/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg nav-transparent bg-gray navbar-light">
+    <div class="container flex-lg-row flex-nowrap align-items-center">
+        <div class="navbar-brand w-100">
+            <a href="./index.html">
+                <img src="./assets/img/logo-dark.png" alt="">
+            </a>
+        </div>
+        <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+            <div class="offcanvas-header d-lg-none">
+                <h3 class="text-white fs-30 mb-0">Sandbox</h3>
+                <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
+                <ul class="navbar-nav">
+                    <li class="dropdown" >
+                        <a class="nav-link dropdown-toggle" href="#" aria-expanded="true">Pages</a>
+
+                        <ul class="dropdown-menu slideIn">
+                            <li class="dropdown dropdown-submenu-button dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#">About</a>
+                                <ul class="dropdown-menu dropdown-submenu slideIn">
+                                    <li class="nav-item"><a class="dropdown-item" href="./about.html">About I</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Projects</a>
+                        <div class="dropdown-menu slideIn">
+                            <div class="double-column">
+                                <div class="double-column-item border-right">
+                                    <h6 class="dropdown-header">Project Pages</h6>
+                                    <ul class="list-unstyled">
+                                        <li><a class="dropdown-item" href="./projects.html">Projects I</a></li>
+                                    </ul>
+                                </div>
+                                <div class="double-column-item">
+                                    <h6 class="dropdown-header">Single Projects</h6>
+                                    <ul class="list-unstyled">
+                                        <li><a class="dropdown-item" href="./single-project.html">Single Project I</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Blog</a>
+                        <ul class="dropdown-menu slideIn">
+                            <li class="dropdown dropdown-submenu-button dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#">Blog Posts</a>
+                                <ul class="dropdown-menu dropdown-submenu slideIn">
+                                    <li class="nav-item"><a class="dropdown-item" href="./blog-post2.html">Post with Sidebar</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar-other w-100 d-flex ms-auto">
+            <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <li class="dropdown text-uppercase nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" aria-expanded="true">En</a>
+                    <ul class="dropdown-menu language-select slideIn">
+                        <li class="nav-item"><a class="dropdown-item" href="#">En</a></li>
+                        <li class="nav-item"><a class="dropdown-item" href="#">De</a></li>
+                        <li class="nav-item"><a class="dropdown-item" href="#">Es</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="./contact.html" class="btn btn-sm btn-yellow rounded-pill">Contact</a>
+                </li>
+                <li class="nav-item d-lg-none">
+                    <a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-nav"><i class="uil uil-bars" style="font-size: 25px; color: #343f52"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="offcanvas offcanvas-start text-inverse" id="offcanvas-nav" data-bs-scroll="true" style="visibility: hidden;" aria-hidden="true">
+    <div class="offcanvas-header">
+        <h3 class="text-white mb-0">Sandbox</h3>
+        <a href="#" class="close" data-bs-dismiss="offcanvas" aria-label="Close"><i class="uil uil-times"></i></a>
+    </div>
+    <div class="offcanvas-body pb-6">
+        <div class="widget mb-8">
+            <div class="accordion" id="mobileNav">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Pages
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#mobileNav">
+                        <div class="accordion-body">
+                            <div class="accordion" id="aboutNav">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="aboutOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAboutOne" aria-expanded="false" aria-controls="collapseAboutOne">
+                                            About
+                                        </button>
+                                    </h2>
+                                    <div id="collapseAboutOne" class="accordion-collapse collapse" aria-labelledby="aboutNav" data-bs-parent="#aboutOne">
+                                        <div class="accordion-body">
+                                            <a class="offcanvas-button" style="color: #fff" href="./about.html" >About 1</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Projects
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#mobileNav">
+                        <div class="accordion-body">
+                            <div class="double-column-item">
+                                <h6 class="offcanvas-column-header">Project Pages</h6>
+                                <a class="offcanvas-button" href="./projects.html" style="color: #fff">Projects I</a>
+                            </div>
+                            <div class="double-column-item">
+                                <h6 class="offcanvas-column-header">Single Projects</h6>
+                                <a class="offcanvas-button" href="./single-project.html" style="color: #fff">Single Project I</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Blog
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#mobileNav">
+                        <div class="accordion-body">
+                            <div class="accordion" id="blogNav">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="blogOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBlogOne" aria-expanded="false" aria-controls="collapseBlogOne">
+                                            Blog Posts
+                                        </button>
+                                    </h2>
+                                    <div id="collapseBlogOne" class="accordion-collapse collapse" aria-labelledby="blogNav" data-bs-parent="#blogOne">
+                                        <div class="accordion-body">
+                                            <a class="offcanvas-button" style="color: #fff" href="./blog-post2.html">Post with Sidebar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /.widget -->
+    </div>
+
+    <div class="offcanvas-footer d-lg-none">
+        <div>
+            <a href="mailto:first.last@email.com" class="offcanvas-button">info@email.com</a>
+            <p> 00 (123) 456 78 90 </p>
+            <nav class="nav social social-white mt-4">
+                <a href="#"><i class="uil uil-twitter"></i></a>
+                <a href="#"><i class="uil uil-facebook-f"></i></a>
+                <a href="#"><i class="uil uil-dribbble"></i></a>
+                <a href="#"><i class="uil uil-instagram"></i></a>
+                <a href="#"><i class="uil uil-youtube"></i></a>
+            </nav>
+            <!-- /.social -->
+        </div>
+    </div>
+    <!-- /.offcanvas-body -->
+</div>
+
+<section class="wrapper bg-gray">
+    <div class="container py-12 py-md-16 text-center">
+        <div class="row">
+            <div class="col-lg-10 col-xxl-8 mx-auto">
+                <h1 class="display-1 mb-1">Check out some of our awesome projects with creative ideas.</h1>
+            </div>
+            <!-- /column -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+
+<section class="wrapper bg-light">
+    <div class="container py-14 py-md-16">
+        <div class="row mt-6">
+            <div class="col-xl-10 mx-auto">
+                <div>
+                    <div class="grid grid-view">
+                        <div class="row g-6" style="position: relative; height: 819px;">
+                            <div class="item col-md-6" style="position: absolute; left: 0%; top: -50px;">
+                                <div class="project-details d-flex justify-content-center flex-column">
+                                    <div class="post-header">
+                                        <div class="post-category text-red mb-3">Ideas</div>
+                                        <h2 class="post-title mb-3">Cras Fermentum Sem</h2>
+                                    </div>
+                                    <!-- /.post-header -->
+                                    <div class="post-content">
+                                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                        <a href="#" class="more hover link-red">See Project</a>
+                                    </div>
+                                    <!-- /.post-content -->
+                                </div>
+                                <!-- /.project-details -->
+                            </div>
+                            <!-- /.item -->
+                            <div class="item col-md-6" style="position: absolute; left: 50%; top: -50px;">
+                                <figure class="itooltip itooltip-light hover-scale rounded" title="<h5 class=&quot;mb-0&quot;>Cursus Inceptos Sit</h5>"><a href="./assets/img/cs1.jpg" data-glightbox="title: Cursus Inceptos Sit" data-gallery="project-1"> <img src="./assets/img/cs1.jpg" alt=""></a>
+                                </figure>
+                            </div>
+                            <!-- /.item -->
+                            <div class="item col-md-6" style="position: absolute; left: 0%; top: 280.203px;">
+                                <figure class="itooltip itooltip-light hover-scale rounded" title="<h5 class=&quot;mb-0&quot;>Ipsum Egestas Porta</h5>"><a href="./assets/img/cs2.jpg" data-glightbox="title: Ipsum Egestas Porta" data-gallery="project-1"> <img src="./assets/img/cs2.jpg" alt=""></a>
+                                </figure>
+                            </div>
+                            <!-- /.item -->
+                            <div class="item col-md-6" style="position: absolute; left: 50%; top: 430px;">
+                                <figure class="itooltip itooltip-light hover-scale rounded" title="<h5 class=&quot;mb-0&quot;>Ultricies Cras Tortor</h5>"><a href="./assets/img/cs3.jpg" data-glightbox="title: Ultricies Cras Tortor" data-gallery="project-1"> <img src="./assets/img/cs3.jpg" alt=""></a>
+                                </figure>
+                            </div>
+                            <!-- /.item -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.project -->
+                    <div class="grid grid-view">
+                        <div class="row g-6 isotope" style="position: relative; height: 760px;">
+                            <div class="item col-md-6" style="position: absolute; left: 0%; top: -50px;">
+                                <div class="project-details d-flex justify-content-center flex-column">
+                                    <div class="post-header">
+                                        <div class="post-category text-yellow mb-3">Concept</div>
+                                        <h2 class="post-title mb-3">Vulputate Sollicitudin</h2>
+                                    </div>
+                                    <!-- /.post-header -->
+                                    <div class="post-content">
+                                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                        <a href="#" class="more hover link-yellow">See Project</a>
+                                    </div>
+                                    <!-- /.post-content -->
+                                </div>
+                                <!-- /.project-details -->
+                            </div>
+                            <!-- /.item -->
+                            <div class="item col-md-6" style="position: absolute; left: 50%; top: -50px;">
+                                <figure class="itooltip itooltip-light hover-scale rounded" title="<h5 class=&quot;mb-0&quot;>Purus Tellus Magna</h5>"><a href="./assets/img/cs4.jpg" data-glightbox="title: Purus Tellus Magna" data-gallery="project-2"> <img src="./assets/img/cs4.jpg" alt=""></a>
+                                </figure>
+                            </div>
+                            <!-- /.item -->
+                            <div class="item col-md-6" style="position: absolute; left: 0%; top: 280.203px;">
+                                <figure class="itooltip itooltip-light hover-scale rounded" title="<h5 class=&quot;mb-0&quot;>Fusce Ipsum Vestibulum</h5>"><a href="./assets/img/cs5.jpg" data-glightbox="title: Fusce Ipsum Vestibulum" data-gallery="project-2"> <img src="./assets/img/cs5.jpg" alt=""></a>
+                                </figure>
+                            </div>
+                            <!-- /.item -->
+                            <div class="item col-md-6" style="position: absolute; left: 50%; top: 380px;">
+                                <figure class="itooltip itooltip-light hover-scale rounded" title="<h5 class=&quot;mb-0&quot;>Condimentum Parturient Ligula</h5>"><a href="./assets/img/cs6.jpg" data-glightbox="title: Condimentum Parturient Ligula" data-gallery="project-2"> <img src="./assets/img/cs6.jpg" alt=""></a>
+                                </figure>
+                            </div>
+                            <!-- /.item -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.project -->
+                    <div class="grid grid-view">
+                        <div class="row g-6" style="position: relative; height: 676.5px;">
+                            <div class="item col-md-6" style="position: absolute; left: 0%; top: -50px;">
+                                <div class="project-details d-flex justify-content-center flex-column">
+                                    <div class="post-header">
+                                        <div class="post-category text-green mb-3">Still Life</div>
+                                        <h2 class="post-title mb-3">Vulputate Sollicitudin</h2>
+                                    </div>
+                                    <!-- /.post-header -->
+                                    <div class="post-content">
+                                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                        <a href="#" class="more hover link-green">See Project</a>
+                                    </div>
+                                    <!-- /.post-content -->
+                                </div>
+                                <!-- /.project-details -->
+                            </div>
+                            <!-- /.item -->
+                            <div class="item col-md-6" style="position: absolute; left: 50%; top: -50px;">
+                                <figure class="itooltip itooltip-light hover-scale rounded" title="<h5 class=&quot;mb-0&quot;>Venenatis Amet Ipsum</h5>"><a href="./assets/img/cs7.jpg" data-glightbox="title: Venenatis Amet Ipsum" data-gallery="project-3"> <img src="./assets/img/cs7.jpg" alt=""></a>
+                                </figure>
+                            </div>
+                            <!-- /.item -->
+                            <div class="item col-md-6" style="position: absolute; left: 0%; top: 280.203px;">
+                                <figure class="itooltip itooltip-light hover-scale rounded" title="<h5 class=&quot;mb-0&quot;>Quam Vehicula Condimentum</h5>"><a href="./assets/img/cs8.jpg" data-glightbox="title: Quam Vehicula Condimentum" data-gallery="project-3"> <img src="./assets/img/cs8.jpg" alt=""></a>
+                                </figure>
+                            </div>
+                            <!-- /.item -->
+                            <div class="item col-md-6" style="position: absolute; left: 50%; top: 330px;">
+                                <figure class="itooltip itooltip-light hover-scale rounded" title="<h5 class=&quot;mb-0&quot;>Commodo Fusce Dapibus</h5>"><a href="./assets/img/cs9.jpg" data-glightbox="title: Commodo Fusce Dapibus" data-gallery="project-3"> <img src="./assets/img/cs9.jpg" alt=""></a>
+                                </figure>
+                            </div>
+                            <!-- /.item -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.project -->
+                    <div class="grid grid-view">
+                        <div class="row g-6" style="position: relative; height: 690px;">
+                            <div class="item col-md-6" style="position: absolute; left: 0%; top: -50px;">
+                                <div class="project-details d-flex justify-content-center flex-column">
+                                    <div class="post-header">
+                                        <div class="post-category text-leaf mb-3">Workshop</div>
+                                        <h2 class="post-title mb-3">Ornare Commodo Mollis</h2>
+                                    </div>
+                                    <!-- /.post-header -->
+                                    <div class="post-content">
+                                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                        <a href="#" class="more hover link-leaf">See Project</a>
+                                    </div>
+                                    <!-- /.post-content -->
+                                </div>
+                                <!-- /.project-details -->
+                            </div>
+                            <!-- /.item -->
+                            <div class="item col-md-6" style="position: absolute; left: 50%; top: -50px;">
+                                <figure class="itooltip itooltip-light hover-scale rounded" title="<h5 class=&quot;mb-0&quot;>Cras Ullamcorper Tellus</h5>"><a href="./assets/img/cs10.jpg" data-glightbox="title: Cras Ullamcorper Tellus" data-gallery="project-4"> <img src="./assets/img/cs10.jpg" alt=""></a>
+                                </figure>
+                            </div>
+                            <!-- /.item -->
+                            <div class="item col-md-6" style="position: absolute; left: 0%; top: 280.203px;">
+                                <figure class="itooltip itooltip-light hover-scale rounded" title="<h5 class=&quot;mb-0&quot;>Quam Bibendum Ornare</h5>"><a href="./assets/img/cs11.jpg" data-glightbox="title: Quam Bibendum Ornare" data-gallery="project-4"> <img src="./assets/img/cs11.jpg" alt=""></a>
+                                </figure>
+                            </div>
+                            <!-- /.item -->
+                            <div class="item col-md-6" style="position: absolute; left: 50%; top: 345px;">
+                                <figure class="itooltip itooltip-light hover-scale rounded" title="<h5 class=&quot;mb-0&quot;>Ullamcorper Etiam Malesuada</h5>"><a href="./assets/img/cs12.jpg" data-glightbox="title: Ullamcorper Etiam Malesuada" data-gallery="project-4"> <img src="./assets/img/cs12.jpg" alt=""></a>
+                                </figure>
+                            </div>
+                            <!-- /.item -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.project -->
+                    <div class="grid grid-view">
+                        <div class="row g-6" style="position: relative; height: 660.5px;">
+                            <div class="item col-md-6" style="position: absolute; left: 0%; top: -50px;">
+                                <div class="project-details d-flex justify-content-center flex-column">
+                                    <div class="post-header">
+                                        <div class="post-category text-orange mb-3">Tools &amp; Toys</div>
+                                        <h2 class="post-title mb-3">Porta Tortor Vulputate</h2>
+                                    </div>
+                                    <!-- /.post-header -->
+                                    <div class="post-content">
+                                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                                        <a href="#" class="more hover link-orange">See Project</a>
+                                    </div>
+                                    <!-- /.post-content -->
+                                </div>
+                                <!-- /.project-details -->
+                            </div>
+                            <!-- /.item -->
+                            <div class="item col-md-6" style="position: absolute; left: 50%; top: -50px;">
+                                <figure class="itooltip itooltip-light hover-scale rounded" title="<h5 class=&quot;mb-0&quot;>Aenean Dolor Tristique</h5>"><a href="./assets/img/cs13.jpg" data-glightbox="title: Aenean Dolor Tristique" data-gallery="project-5"> <img src="./assets/img/cs13.jpg" alt=""></a>
+                                </figure>
+                            </div>
+                            <!-- /.item -->
+                            <div class="item col-md-6" style="position: absolute; left: 0%; top: 280.203px;">
+                                <figure class="itooltip itooltip-light hover-scale rounded" title="<h5 class=&quot;mb-0&quot;>Magna Ipsum Euismod</h5>"><a href="./assets/img/cs14.jpg" data-glightbox="title: Magna Ipsum Euismod" data-gallery="project-5"> <img src="./assets/img/cs14.jpg" alt=""></a>
+                                </figure>
+                            </div>
+                            <!-- /.item -->
+                            <div class="item col-md-6" style="position: absolute; left: 50%; top: 330px;">
+                                <figure class="itooltip itooltip-light hover-scale rounded" title="<h5 class=&quot;mb-0&quot;>Fusce Mollis</h5>"><a href="./assets/img/cs15.jpg" data-glightbox="title: Fusce Mollis" data-gallery="project-5"> <img src="./assets/img/cs15.jpg" alt=""></a>
+                                </figure>
+                            </div>
+                            <!-- /.item -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.project -->
+                </div>
+                <!-- /.projects-tiles -->
+            </div>
+            <!-- /column -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+
+<footer class="bg-dark text-inverse" style="padding-top: 5rem; margin-top: 5rem">
+    <div class="container pt-15 pt-md-17 pb-13 pb-md-15">
+        <div class="row gy-6 gy-lg-0">
+            <div class="col-md-4 col-lg-3">
+                <div class="widget">
+                    <img class="mb-4" src="./assets/img/logo-light.png" alt="">
+                    <p class="mb-4">© 2021 Sandbox. <br class="d-none d-lg-block">All rights reserved.</p>
+                    <nav class="nav social social-white">
+                        <a href="#"><i class="uil uil-twitter"></i></a>
+                        <a href="#"><i class="uil uil-facebook-f"></i></a>
+                        <a href="#"><i class="uil uil-dribbble"></i></a>
+                        <a href="#"><i class="uil uil-instagram"></i></a>
+                        <a href="#"><i class="uil uil-youtube"></i></a>
+                    </nav>
+                    <!-- /.social -->
+                </div>
+                <!-- /.widget -->
+            </div>
+            <!-- /column -->
+            <div class="col-md-4 col-lg-3">
+                <div class="widget">
+                    <h4 class="widget-title text-white mb-3">Get in Touch</h4>
+                    <address class="pe-xl-15 pe-xxl-17">Moonshine St. 14/05 Light City, London, United Kingdom</address>
+                    <a href="mailto:#">info@email.com</a><p> 00 (123) 456 78 90</p>
+                </div>
+                <!-- /.widget -->
+            </div>
+            <!-- /column -->
+            <div class="col-md-4 col-lg-3">
+                <div class="widget">
+                    <h4 class="widget-title text-white mb-3">Learn More</h4>
+                    <ul class="list-unstyled  mb-0">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <!-- /.widget -->
+            </div>
+            <!-- /column -->
+            <div class="col-md-12 col-lg-3">
+                <div class="widget">
+                    <h4 class="widget-title text-white mb-3">Our Newsletter</h4>
+                    <p class="mb-5">Subscribe to our newsletter to get our news &amp; deals delivered to you.</p>
+                    <div class="newsletter-wrapper">
+                        <!-- Begin Mailchimp Signup Form -->
+                        <div id="mc_embed_signup2">
+                            <form class="validate dark-fields">
+                                <div id="mc_embed_signup_scroll2">
+                                    <div class="mc-field-group input-group form-floating">
+                                        <input type="email" value="" name="EMAIL" class="required email form-control" placeholder="Email Address" id="mce-EMAIL2">
+                                        <label for="mce-EMAIL2">Email Address</label>
+                                        <input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe2" class="btn btn-primary ">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </form>
+                        </div>
+                        <!--End mc_embed_signup-->
+                    </div>
+                    <!-- /.newsletter-wrapper -->
+                </div>
+                <!-- /.widget -->
+            </div>
+            <!-- /column -->
+        </div>
+        <!--/.row -->
+    </div>
+    <!-- /.container -->
+</footer>
+
+<div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 170.148;"></path>
+    </svg>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/glightbox.js"></script>
+</script>
+
+</body>
+</html>

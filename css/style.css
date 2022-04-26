@@ -3418,7 +3418,7 @@ figure img {
     bottom: 0
 }
 
-.rounded {
+.rounded, figure img {
     border-radius: 0.4rem!important;
 }
 
@@ -3846,4 +3846,119 @@ h2{
 address{
     color: #60697b;
     font: 16px THICCCBOI, sans-serif;
+}
+
+.post-category {
+    text-transform: uppercase;
+    letter-spacing: .02rem;
+    font-size: .7rem;
+    font-weight: 700;
+    color: #aab0bc;
+}
+
+.text-line:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-60%);
+    left: 0;
+    width: 0.75rem;
+    height: 0.05rem;
+    background: #fcd49b;
+}
+
+.text-line {
+    position: relative;
+    vertical-align: top;
+    padding-left: 1.4rem;
+}
+
+.btn-soft-ash {
+    background-color: rgba(164,174,198,.2);
+    color: #343f52;
+    transition: ease-in-out 0.2s;
+    padding: 1rem;
+    font: 20px THICCCBOIMedium, sans-serif;
+}
+
+.btn-soft-ash:hover {
+    transform: translateY(-3px);
+}
+
+.btn-red:hover {
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.btn-red {
+    color: #fff;
+    background-color: #e2626b;
+    border-color: #e2626b;
+    transition: ease-in-out 0.2s;
+    padding: 1rem;
+    font: 20px THICCCBOIMedium, sans-serif;
+}
+
+.hover-scale:hover img {
+    transform: scale(1.05);
+}
+
+.hover-scale img {
+    transition: all .35s ease-in-out;
+}
+
+@media (min-width: 768px)
+{
+    .mt-md-12 {
+        margin-top: 3.5rem!important;
+    }
+}
+
+.mt-8 {
+    margin-top: 2rem!important;
+}
+
+@media (min-width: 768px) {
+    .py-md-16 {
+        padding-top: 6rem!important;
+        padding-bottom: 6rem!important;
+    }
+}
+.py-12 {
+    padding-top: 3.5rem!important;
+    padding-bottom: 3.5rem!important;
+}
+
+.grid{
+    margin-bottom: 10rem;
+}
+
+.text-leaf {
+    color: #7cb798!important;
+}
+
+.text-green {
+    color: #45c4a0!important;
+}
+
+.text-red {
+    color: #e2626b!important;
+}
+.text-yellow {
+    color: #fab758!important;
+}
+
+.text-orange {
+    color: #f78b77!important;
+}
+
+.link-orange {
+    color: #f78b77;
+}
+
+.wrapper-border {
+    border-bottom: 1px solid rgba(164,174,198,.2);
+    margin-bottom: 2rem;
+    padding-bottom: 5rem;
 }
