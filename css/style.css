@@ -320,6 +320,10 @@ button.hamburger {
     margin-bottom: 3rem;
 }
 
+.widget-title{
+    font: 19px THICCCBOIMedium, sans-serif;
+}
+
 .social a:not(.btn-circle) {
     font-size: 1.2rem;
     transition: all .2s ease-in-out;
@@ -3803,4 +3807,43 @@ h2{
 
 .h-16 {
     height: 6rem!important;
+}
+
+.h-21 {
+    height: 12.5rem!important;
+}
+
+.w-17 {
+    width: 7rem !important;
+}
+
+.w-21 {
+    width: 12.5rem!important;
+}
+
+.icon-svg, .icon-svg.icon-svg-lg {
+    width: 3rem;
+    height: 3rem;
+}
+
+.padding-medium{
+    padding: 7rem;
+}
+.padding-small{
+    padding: 1rem;
+}
+
+.icon{
+    font-size: 28px;
+    margin-right: 2rem;
+}
+
+.link-gray{
+    color: #60697b;
+    transition: ease-in-out 0.2s;
+}
+
+address{
+    color: #60697b;
+    font: 16px THICCCBOI, sans-serif;
 }
