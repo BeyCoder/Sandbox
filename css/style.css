@@ -3962,3 +3962,163 @@ address{
     margin-bottom: 2rem;
     padding-bottom: 5rem;
 }
+
+.post-header .post-meta {
+    font-size: .8rem;
+}
+
+.post-meta {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: .7rem;
+    color: #aab0bc;
+}
+.mb-5 {
+    margin-bottom: 1.25rem!important;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+ol, ul {
+    padding-left: 2rem;
+}
+.post-meta li {
+    display: inline-block;
+}
+
+.post-header .post-meta li:before {
+    margin: 0 0.6rem 0 0.4rem;
+}
+.post-meta li:before {
+    content: "";
+    display: inline-block;
+    width: 0.2rem;
+    height: 0.2rem;
+    border-radius: 100%;
+    margin: 0 0.6rem 0;
+    vertical-align: 0.15rem;
+    background: #aab0bc;
+    opacity: .5;
+}
+
+.post-meta li a, .post-meta li span{
+    color: #aab0bc;
+    transition: all .2s ease-in-out;
+}
+
+.post-meta li a:hover, .post-meta li a span:hover {
+    color: #fab758;
+}
+
+.mb-4 {
+    margin-bottom: 1rem!important;
+}
+
+.h1, h1 {
+    font-size: calc(1.27rem + .24vw);
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+blockquote {
+    border-left: 0.15rem solid #fab758;
+    padding-left: 1rem;
+    line-height: 1.7;
+    font-weight: 500;
+    font-size: 20px;
+}
+.blockquote-footer {
+    font-weight: 700;
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: .02rem;
+}
+
+.blockquote-footer {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: .6rem;
+    color: #aab0bc;
+}
+.fs-lg {
+    font-size: 1rem!important;
+}
+.my-8 {
+    margin-top: 2rem!important;
+    margin-bottom: 2rem!important;
+}
+.icon-list:not(.row) li+li,.unordered-list li+li,.widget .list-unstyled:not(.tag-list) li+li {
+    margin-top: .35rem
+}
+
+.tag-list li {
+    display: inline-block;
+    margin-right: .2rem;
+    margin-bottom: .1rem
+}
+
+.tag-list li a:before {
+    font-style: normal;
+    content: "#";
+    font-weight: 400;
+    padding-right: .2rem
+}
+
+.blog.single .post .tag-list li,.widget .tag-list li {
+    margin-top: 0;
+    margin-bottom: .45rem
+}
+
+.widget .tag-list li a {
+    display: flex;
+    align-items: center
+}
+
+.btn-share{
+    font-size: 16px !important;
+}
+.user-avatar {
+    margin-right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+    border-radius: 100%;
+}
+.mb-16 {
+    margin-bottom: 6rem!important;
+}
+
+#comments ol.commentlist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+ol, ul {
+    padding-left: 2rem;
+}
+#comments ul.children {
+    margin: 2rem 0 0 0;
+    overflow: inherit;
+    padding: 0 0 0 3.5rem;
+    list-style: none;
+}
+#comments ul.children li.comment:before {
+    display: block;
+    font-family: Custom;
+    content: "\e904";
+    font-size: calc(1.325rem + .9vw);
+    position: absolute;
+    left: -2.5rem;
+    top: -1.25rem;
+    color: rgba(164,174,198,.25);
+}
